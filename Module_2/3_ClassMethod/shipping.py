@@ -39,8 +39,8 @@ class ShippingContainer:
 
 container = ShippingContainer.create_empty("YML")
 print(container.contents)
-
 print(container.bic)
 
 container2 = ShippingContainer.create_with_items("YML", ['tools', 'food', 'cars'])
 print(container2.contents)
+print(container2.bic)
