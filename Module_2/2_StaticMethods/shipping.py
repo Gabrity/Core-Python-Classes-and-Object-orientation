@@ -2,6 +2,8 @@ class ShippingContainer:
 
     next_serial = 1337 
 
+    # internal implementatio detail of the class, usually not part of the class interface
+    # it could be moved to a global a scope
     @staticmethod
     def _generate_serial():
         result = ShippingContainer.next_serial
