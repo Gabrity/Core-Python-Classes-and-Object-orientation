@@ -1,4 +1,4 @@
-addeclass Position:
+class Position:
 
     def __init__(self, latitude, longitude):
         if not (-90 <= latitude <= +90):
