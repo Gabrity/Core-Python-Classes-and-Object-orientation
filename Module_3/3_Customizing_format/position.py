@@ -30,8 +30,8 @@ class Position:
         latitude = format(abs(self.latitude), '.2f')
         longitude = format(abs(self.longitude), '.2f')
         return (
-            f"{abs(self.latitude)} {self.latitude_hemisphere}, "
-            f"{abs(self.longitude)} {self.longitude_hemisphere}"
+            f"{latitude} {self.latitude_hemisphere}, "
+            f"{longitude} {self.longitude_hemisphere}"
             )
 
 def typename(obj):
@@ -44,7 +44,7 @@ class EarthPosition(Position):
     pass
 
 
-oslo_position = Position(-45, 179)
+oslo_position = Position(-45.55432, 179.654234)
 print(format(oslo_position)) #these two are equal
 print(f'{oslo_position}')
 
