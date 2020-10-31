@@ -33,11 +33,9 @@ class IntList(SimpleList):
     def _validate(x):
         if not isinstance(x, int):
             raise TypeError(f'{x} is not of type int.')
-        
+
+
 intlist = IntList([3,45,6])
 intlist.add(8)
 print(intlist)
-intlist.add('4')
-
-
-
+#intlist.add('4') error

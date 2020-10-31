@@ -1,4 +1,8 @@
 from simple_list import *
 
-issubclass(IntList, SimpleList)
-issubclass(SimpleList, IntList)
+print(issubclass(IntList, SimpleList))
+print(issubclass(SimpleList, IntList))
+
+class MyInt(int): pass
+class MySpecialInt(MyInt) : pass
+print(issubclass(MySpecialInt, int))
